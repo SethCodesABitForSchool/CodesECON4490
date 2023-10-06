@@ -26,3 +26,22 @@ View(gdp)
 
 #subsetting
 gdp_subset <- subset(gdp, select = c(Y2))
+
+#this was ineteresting - 4 images on one - the stimulated dataset
+plot.ts(gdp, main= "GDP")
+plot.ts(gdp_subset, main= "GDP", col= "red", type="l", lwd= 3)
+#the df didnt have date, ts function auto changed the dataset into a time series - i could be wrong 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
