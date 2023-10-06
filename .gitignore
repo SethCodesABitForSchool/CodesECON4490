@@ -32,6 +32,15 @@ plot.ts(gdp, main= "GDP")
 plot.ts(gdp_subset, main= "GDP", col= "red", type="l", lwd= 3)
 #the df didnt have date, ts function auto changed the dataset into a time series - i could be wrong 
 
+# The ylim argument in the barplot function sets the limits for the y-axis, determining the range of values to display.
+In the context of autocorrelation functions (ACF), the values typically range from -1 to 1, 
+as autocorrelation coefficients can take values between -1 and 1.
+
+#However, depending on your specific use case and the characteristics of your autocorrelation function, 
+you might want to adjust the ylim values to better suit the range of autocorrelation coefficients you're observing. 
+For example, if your autocorrelation coefficients mostly fall within the range of, say, -0.5 to 0.5, you can adjust 
+ylim = c(-0.5, 0.5).
+
 
 
 
